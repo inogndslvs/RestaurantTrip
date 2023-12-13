@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.SkipLink {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #EE7C13;
+  font-family: 'Days One', sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  z-index: 9999;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+ 
+.SkipLink:focus {
+   top: 0;
+}
+
+.heading {
+  background-color: #000000;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  border-bottom: 4px solid #EE7C13;
+}
+
+/* a,
+input,
+button,
+textarea {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+} */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading h1 {
+  color: #fff;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+}
+
+.heading h1 span {
+  color: #EE7C13;
+}
+
+.heading .logo {
+  margin-left: 20px;
+}
+
+/* Hamburger Menu */
+.drawer {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 70;
+  font-size: 2em;
+  margin: 0.1em 0.1em;
+  text-decoration: none;
+  background-color: #00000000;
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+}
+
+
+
+.navlist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Days One', sans-serif;
+  list-style: none;
+}
+
+.navlist ul {
+  display: flex;
+} 
+
+.navlist a {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.3s;
+}
+
+.navlist a:hover {
+  color: #EE7C13;
+  font-size: 20px;
+}
+ 
+/* Jumbotron */
+.hero {
+  background-image: url(../public/images/heros/hero-image_3.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin-top: 74px;
+}
+
+
+
+.hero_title {
+  text-align: start;
+  color: #ffffff;
+  font-family: 'Days One', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-top: 80px;
+  margin-left: 30px;
+}
+
+.hero .hero_title span {
+  color: #EE7C13;
+}
+
+/* Search Item */
+.searchItem {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* .searchItem form {
+  text-align: center;
+} */
+
+.searchItem {
+  display: block;
+  padding: 20px;
+  font-family: 'Days One', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.searchItem span {
+  color: #EE7C13;
+}
+
+/* .searchItem input {
+  width: 50%;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid #525050;
+}
+
+.searchItem ::placeholder {
+  text-align: center;
+  color: #969292;
+} */
+
+
+/* Home Page */
+.restaurantContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  align-content: start;
+}
+
+.restaurantItem {
+  margin: 10px;
+  max-width: 100%;
+  height: 420px;
+  background-color: #D9D9D9;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 25%);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  font-family: 'Days One', sans-serif;
+  position: relative;
+}
+
+.restaurantItem .Restaurant-item-header .restaurant-image {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.Restaurant-item-header {
+  position: relative;
+}
+.restaurantItem .Restaurant-item-header .card-rating {
+  position: absolute;
+  padding: 8px;
+  top: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: #EE7C13;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+.Restaurant-item-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.restaurantItem .Restaurant-item-content h4 {
+  color: #EE7C13;
+  font-size: 15px;
+}
+
+.restaurantItem .Restaurant-item-content .title a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 10px 10px 0;
+}
+
+.restaurantItem .Restaurant-item-content .title a:hover {
+  color: #EE7C13;
+}
+
+.Restaurant-item-content .card-desc {
+  font-size: 12px;
+  font-weight: 50;
+  color: #333131;
+}
+
+.detail-button {
+  position: absolute;
+  text-align: center;
+  right: 90px;
+  width: 110px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #EE7C13;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 25%);
+}
+
+.detail-button:hover{
+  background-color: #ffffff;
+}
+
+.detail-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Days One', sans-serif;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.detail-button a:hover{
+  color: #000000;
+}
+
+
+/* Detail Page */
+.detail-resto-container {
+  margin-top: 50px;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.main-card {
+  font-family: 'Days One', sans-serif;
+  width: 95%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.desc-text {
+  font-size: 12px;
+  color: rgb(59, 57, 52);
+}
+
+.right-card {
+  height: 450px;
+  overflow-y: scroll;
+  padding: 5px;
+  line-height: 30px;
+}
+
+.left-card img {
+  max-height: 500px;
+}
+
+.menu {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #EE7C13;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: space-evenly;
+}
+
+.menu h4 {
+  color: #1b1a1a;
+  font-size: 15px;
+}
+
+.menu-minuman h4 {
+  color: #1b1a1a;
+}
+.menu-list {
+  font-weight: 100;
+}
+
+.review-resto {
+  font-family: 'Days One', sans-serif;
+  margin: 20px;
+  margin-top: 80px;
+  padding: 15px;
+}
+
+.review-element {
+  margin-top: 20px;
+}
+
+.review-judul {
+  padding-bottom: 10px;
+}
+
+.review-date {
+  color: #EE7C13;
+}
+
+.review-consumen {
+  font-size: 15px;
+}
+
+.review-content {
+  font-size: 12px;
+  color: rgb(59, 57, 52);
+}
+
+/* like */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EE7C13;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Favorite page */
+.favorite-heading {
+  text-align: center;
+}
+.favorite {
+  margin-top: 100px;
+}
+
+.favorite h2 {
+  font-family: 'Days One', sans-serif;
+  /* text-align: center; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.favorite .restoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+/* footer */
+
+.navfoot {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  margin-top: 30px;
+  height: 200px;
+}
+
+.navfoot ul li a {
+  font-family: 'Days One', sans-serif;
+  color: #ee7d13fb;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.3s;
+  /* display: inline-block; */
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.navfoot ul li a:hover{
+  color: #D9D9D9;
+  font-size: 17px;
+}
+
+.foot {
+  background-color: #EE7C13;
+  width: 100%;
+  height: 70px;
+  
+}
+
+.foot h6 {
+  padding-top: 35px;
+  text-align: center;
+  font-family: 'Days One', sans-serif;
+  color: #D9D9D9;
+}
+

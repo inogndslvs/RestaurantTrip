@@ -1,0 +1,42 @@
+{
+  "theme_color": "#EE7C13",
+    "background_color": "#1b1a1a",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/index.html",
+    "name": "RestaurantTrip App",
+    "short_name": "RestaurantTrip Lite",
+    "description": "Free catalogue restaurant for you",
+    "icons": [
+        {
+            "src": "/icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

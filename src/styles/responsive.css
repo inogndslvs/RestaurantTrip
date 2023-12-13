@@ -1,0 +1,322 @@
+@media  (min-width: 768px){
+  .navfoot ul li a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .hero {
+    background-image: url(../public/images/heros/hero-image_3-large.jpg);
+  }
+
+  .restaurantContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* favorite page */
+.favorite .restoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+}
+}
+
+/* Resposive Tablet */
+ @media (max-width: 768px) {
+    .restaurantContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+/* favorite page */
+  .favorite .restoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+  /* Detail */
+  .left-card img {
+    max-width: 400px;
+    max-height: 100%;
+  } 
+
+  .main-card {
+    max-height: 270px;
+  }
+
+  .right-card {
+    max-height: 260px;
+  }
+} 
+
+/* MObile M */
+@media (max-width: 425px) {
+  /* hamburger */
+  .drawer {
+    display: block;
+  
+    .hero {
+      background-image: url(../public/images/heros/hero-image_3-small.jpg);
+    }
+}
+
+.navlist {
+    z-index: 10px;
+    background-color: #faf8f8;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; 
+
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+    display: block;
+  }
+
+.navlist a {
+  color: black;
+}  
+
+  .open {
+    visibility: visible;
+    opacity: 1; 
+    height: auto; 
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .navitem {
+    border-bottom: 1px solid #333232;
+    width: 100%;
+    text-align: right;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .navlist ul {
+    display: block;
+  } 
+
+  /* Container box resposive */
+
+  .restaurantContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero_title {
+    font-size: 0.9rem;
+    font-weight: 1rem;
+}
+
+/* favorite page */
+.favorite .restoes {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+ /* navfoot */
+ .navfoot {
+  display: block;
+}
+.navfoot ul {
+  margin: 10px;
+}
+
+.navfoot ul li a {
+  font-size: 1rem;
+  padding: 13px;
+}
+
+.navfoot ul li a:hover{
+  color: #faf8f8;
+  font-size: 20px;
+}
+
+
+/* Detail */
+.main-card {
+  display: block;
+  height: auto;
+}
+
+.right-card {
+  overflow-y: scroll;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.left-card img {
+  max-width: 100%;
+}
+
+.review-resto {
+  font-size: 12px;
+  margin-top: 250px;
+}
+
+
+}
+
+/* Mobile S */
+@media (max-width: 375px) {
+  .restaurantContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .restaurantItem {
+       width: 300px;
+        
+  }
+
+  .hero_title {
+      font-size: 0.65rem;
+      font-weight: 1rem;
+  }
+/* favorite page */
+.favorite-heading {
+  font-size: 20px;
+  text-align: center;
+}
+  .favorite .restoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+/* Deskripsi detail restorant */
+  .main-card {
+    display: block;
+    height: auto;
+  }
+
+  .right-card {
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .left-card img {
+    max-width: 100%;
+  }
+
+  .review-resto {
+    font-size: 12px;
+    display: block;
+    margin-top: 200px;
+  }
+ 
+  .favorite .restoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+  /* navfoot */
+  .navfoot {
+    display: block;
+  }
+  .navfoot ul {
+    margin: 10px;
+  }
+
+  .navfoot ul li a {
+    font-size: 1rem;
+    padding: 13px;
+    align-items: center;
+  }
+
+  .navfoot ul li a:hover{
+    color: #faf8f8;
+    font-size: 18px;
+  }
+
+} 
+
+@media (max-width: 272px) {
+  .restaurantContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .restaurantItem {
+       width: 250px;
+        
+  }
+
+  .hero_title {
+      font-size: 0.65rem;
+      font-weight: 1rem;
+  }
+/* favorite page */
+
+.favorite-heading {
+  font-size: 15px;
+  text-align: center;
+}
+  .favorite .restoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+/* Deskripsi detail restorant */
+  .main-card {
+    display: block;
+    height: auto;
+  }
+
+  .right-card {
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .left-card img {
+    max-width: 100%;
+  }
+
+  .review-resto {
+    font-size: 12px;
+    display: block;
+    margin-top: 200px;
+  }
+ 
+  .favorite .restoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+  /* navfoot */
+  .navfoot {
+    display: block;
+  }
+  .navfoot ul {
+    margin: 10px;
+  }
+
+  .navfoot ul li a {
+    font-size: 1rem;
+    padding: 13px;
+    align-items: center;
+  }
+
+  .navfoot ul li a:hover{
+    color: #faf8f8;
+    font-size: 18px;
+  }
+
+} 
